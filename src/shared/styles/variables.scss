@@ -1,0 +1,25 @@
+$color: (
+  primary: #fff,
+  secondary: #aaa,
+  error: #f00,
+
+  font-primary: #000,
+  font-secondary: #666,
+  font-disabled: #999,
+  font-hint: #399
+);
+
+$font: (
+  stack: arial
+);
+
+:export {
+  primaryColor: map-get($color, primary);
+  secondaryColor: map-get($color, secondary);
+  errorColor: map-get($color, error);
+  primaryFontColor: map-get($color, font-primary);
+  secondaryFontColor: map-get($color, font-secondary);
+  disabledFontColor: map-get($color, font-disabled);
+  hintFontColor: map-get($color, font-hint);
+  fontStack: map-get($font, stack);
+}
